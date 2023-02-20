@@ -1,0 +1,411 @@
+.c-info {
+    padding-top: 99px;
+    background: url(./assets/img/bgbeige.jpg) repeat center / auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @include sp {
+        margin-top: -261px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 40px;
+    }
+
+    .c-info__brand {
+        padding: 0 0 107px;
+
+        @include sp {
+            padding-bottom: 55px;
+        }
+    }
+
+    .c-info__points {
+        margin-bottom: 107px;
+
+        @include sp {
+            margin-bottom: -17px;
+        }
+    }
+
+    .c-info__pointblock {
+        margin-bottom: 107px;
+
+        @include sp {
+            max-width: 366px;
+            margin: 0 auto;
+            padding-bottom: 51px;
+
+            &:nth-child(2) {
+                .c-info__smallheading--aligned {
+                    display: block !important;
+                }
+            }
+
+            &:nth-child(2n + 1) {
+                .c-info__smallheading--aligned {
+                    margin-left: -5px;
+                }
+            }
+        }
+    }
+
+    .c-info__pointheading {
+        display: grid;
+        grid-template-columns: fit-content(100%) 1fr;
+        margin-left: 11.7%;
+        margin-bottom: 52px;
+        max-width: fit-content;
+
+        @include tab {
+            margin: 0 auto 50px;
+            align-items: center;
+            grid-template-columns: fit-content(100%) 1fr;
+            justify-content: center;
+        }
+
+        @include sp {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-bottom: 25px;
+            display: flex;
+            max-width: 330px;
+            width: 100%;
+        }
+    }
+
+    .c-info__numberimg {
+        @include sp {
+            zoom: 59%;
+            transform: translate(16px, -2px);
+        }
+    }
+
+    .c-info__images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+
+        @include tab {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 30px;
+            justify-items: center;
+        }
+
+        @include sp {
+            margin-top: -6px;
+        }
+    }
+
+    .c-info__imagecontainer {
+        position: relative;
+    }
+
+    .c-info__image {
+        border-radius: 30px;
+
+        @include sp {
+            max-width: 330px;
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+
+    .c-info__image3 {
+        @include sp {
+            transform: translateY(1px);
+        }
+    }
+
+    .c-info__more {
+        position: absolute;
+        bottom: 6.3%;
+        right: 6.2%;
+
+        @include sp {
+            bottom: 5%;
+            right: 5%;
+            zoom: 71.7%;
+        }
+
+        &:hover {
+            @include hover-effect;
+        }
+    }
+
+    .c-info__linebreak {
+        background-color: #000;
+        width: 35px;
+        height: 2px;
+        border: none;
+        margin-top: 20px;
+        margin-left: 16px;
+
+        @include sp {
+            height: 1px;
+            margin: 9px 0 0 12px;
+        }
+    }
+
+    .c-info__label {
+        font-size: 2.2rem;
+        margin-left: -1px;
+        margin-top: -1px;
+        display: inline-block;
+        letter-spacing: 0.1px;
+
+        @include sp {
+            font-size: 1.6rem;
+            margin: 4px 0 0;
+        }
+    }
+
+    .c-info__bigheading {
+        font-weight: 400;
+        font-size: 3.6rem;
+        margin-top: -6px;
+        letter-spacing: 3.6px;
+        margin-bottom: 14px;
+
+        @include sp {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin: -5px 0 0;
+        }
+    }
+
+    .c-info__smallheading {
+        margin-left: 3px;
+        letter-spacing: 1.4px;
+        line-height: 1.7;
+        margin-top: 1px;
+
+        @include tab {
+            grid-area: 2/1/3/3;
+        }
+
+        @include sp {
+            font-size: 1.3rem;
+            margin: 2px 0 0;
+            letter-spacing: 1.3px;
+        }
+    }
+
+    .c-info__headingcontent {
+        margin-left: 28px;
+        transform: translateY(1px);
+
+        @include tab {
+            display: flex;
+            margin-left: 25px;
+            flex-direction: column;
+            transform: translateY(0);
+        }
+
+        @include sp {
+            margin-left: 4.7%;
+        }
+    }
+
+    .c-info__overlay {
+        position: absolute;
+        border-radius: 26px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 6% 7.6% 7.6%;
+        top: 6%;
+        left: 6%;
+        right: 6%;
+        bottom: 6%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        visibility: hidden;
+        opacity: 0;
+        max-height: 290px;
+        overflow-x: hidden;
+
+        @include tab {
+            max-height: unset;
+        }
+
+        @include sp {
+            top: 5%;
+            left: 4.9%;
+            right: 5%;
+            bottom: 4.6%;
+            border-radius: 13px;
+            display: block;
+            padding: 6% 6.2% 7.6%;
+        }
+
+        &.c-info__overlay--flex {
+            opacity: 0.8;
+            visibility: visible;
+            transition: opacity 0.5s linear;
+            transition: opacity 0.5s linear;
+        }
+    }
+
+    .c-info__overlayheading {
+        font-size: 2.4rem;
+        font-weight: 400;
+        letter-spacing: 2.3px;
+
+        @include tab {
+            font-size: 2rem;
+        }
+
+        @include sp {
+            font-size: 1.6rem;
+            margin-top: 13%;
+            letter-spacing: 1.7px;
+            margin-left: -8px;
+            text-align: center;
+            margin-left: 1px;
+            @media only screen and (max-width: 340px) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .c-info__overlaylinebreak {
+        width: 50px;
+        height: 1px;
+        border: none;
+        background-color: #176b6a;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include sp {
+            margin-top: 9px;
+            transform: translate(1px, 11px);
+        }
+    }
+
+    .c-info__overlaydescription {
+        font-size: 1.2rem;
+        width: 83%;
+        margin-top: 7px;
+        letter-spacing: 1.2px;
+        line-height: 1.7;
+
+        @include tab {
+            font-size: 1.3rem;
+        }
+
+        @include sp {
+            width: 100%;
+            letter-spacing: 1.3px;
+            margin-top: 33px;
+        }
+
+        .c-info__overlaydescription--aligned {
+            letter-spacing: 1.2px;
+            line-height: 1.7;
+        }
+    }
+
+    .c-info__overlaylabel {
+        background-image: url(./assets/img/point/point_button.png);
+        font-size: 1.6rem;
+        padding: 9px 0 8px 28px;
+        display: inline-block;
+        position: relative;
+        letter-spacing: 1.6px;
+        width: 198px;
+        margin-top: 13%;
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        @include tab {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0;
+        }
+
+        @include sp {
+            font-size: 1.3rem;
+            height: 26px;
+            width: 130px;
+            margin: 19px auto 0;
+        }
+    }
+
+    .c-info__brandheading {
+        font-weight: 400;
+        text-align: center;
+        margin-top: -4px;
+        font-size: 3rem;
+        transform: translateX(-1px);
+        
+        @include sp {
+            font-size: 1.8rem;
+            letter-spacing: 1.68px;
+            line-height: 1.7;
+            transform: translateX(1px);
+        }
+    }
+
+    .c-info__brandlogos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 41px;
+        justify-items: center;
+
+        @media only screen and (max-width: 1240px) {
+            column-gap: 20px;
+
+            @include tab {
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 20px;
+                justify-items: center;
+                max-width: 540px;
+                width: 100%;
+                margin: 41px auto 0;
+            }
+
+            @include sp {
+                row-gap: 25px;
+                column-gap: 25px;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin-top: 21px;
+            }
+        }
+    }
+
+    .c-info__brandlogo {
+        border-radius: 20px;
+
+        &:hover {
+            @include hover-effect;
+        }
+
+        @include sp {
+            border-radius: 10px;
+        }
+    }
+
+    .c-info__brandnote {
+        font-size: 1.2rem;
+        margin-top: 47px;
+        text-align: center;
+        letter-spacing: 1.4px;
+        
+        @include sp {
+            letter-spacing: 1.3px;
+            margin-top: 20px;
+            font-size: 1.3rem;
+            color: #000;
+            line-height: 1.66;
+        }
+    }
+}

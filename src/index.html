@@ -1,0 +1,287 @@
+<%- include('_layouts/layout', { title: 'Mentha Oil' }); -%>
+
+  <!-- @meta -->
+  <meta name="description" content="Home page" />
+  <meta name="keywords" content="">
+  <!-- @@meta -->
+
+  <!-- @content -->
+  <main class="p-home">
+    <div class="p-home__content">
+
+      <!-- BANNER -->
+      <!-- *********************************** -->
+      <section id="banner" class="c-banner p-scroll">
+        <div class="c-banner__imgtext l-container">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/banner/banner_bg_mobile.jpg" />
+            <img class="c-banner__img" src="./assets/img/banner/banner_bg.jpg" alt="ハッカ油" />
+          </picture>
+
+          <div class="c-banner__content">
+            <h1 class="c-banner__heading">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/banner/banner_h1_mobile.png" />
+                <img class="c-banner__headingimg u-scalehalf" src="./assets/img/banner/banner_h1.png"
+                  alt="健栄製薬の ハッカ油" />
+              </picture>
+            </h1>
+
+            <hr class="c-banner__linebreak" />
+            <p class="c-banner__product--en">MENTHA OIL</p>
+            <p class="c-banner__slogan">ハッカ油は、毎日の暮らしを豊かにする</p>
+            <p class="c-banner__slogan2">魔法のしずく</p>
+            <a href="#" class="c-banner__label u-whitetext">
+              ハッカ？
+              <span class="c-banner__label--pp">ミント？</span>
+            </a>
+          </div>
+        </div>
+
+        <img class="c-banner__iconmenu u-scalehalf" src="./assets/img/header/iconmenu_green_mobile.png"
+          alt="icon menu" />
+      </section>
+
+      <!-- DAILY USE -->
+      <!-- *********************************** -->
+      <section id="daily" class="c-daily l-container p-scroll">
+        <p class="c-daily__intro">使い方いろいろ</p>
+        <h2 class="c-daily__menthaoil">毎日にハッカ油</h2>
+        <div class="c-daily__uses">
+          <% if (typeof dailyItems !='undefined' ) { %>
+            <% dailyItems.forEach(dailyItem=> { %>
+              <a href="#">
+                <div class="c-daily__use c-daily__use<%= dailyItem.id %>">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="<%= dailyItem.urlmobile %>" />
+                    <img class="c-daily__useimg u-scalehalf" src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>" />
+                  </picture>
+
+                  <label class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text is-aligned">
+                    <%= dailyItem.title %>
+                  </label>
+
+                  <% if (dailyItem.recommend) { %>
+                    <picture>
+                      <source media="(max-width: 767px)" srcset="<%= dailyItem.recommendmobile %>" />
+                      <img class="c-daily__recommend c-daily__recommend<%= dailyItem.id %> u-absolute u-scalehalf"
+                        src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>" />
+                    </picture>
+                    <% } %>
+                </div>
+              </a>
+            <% }) %>
+          <% } %>
+        </div>
+      </section>
+
+      <!-- INFO -->
+      <!-- *********************************** -->
+      <section id="info" class="c-info">
+        <div class="c-info__content l-container p-scroll">
+          <div class="c-info__points l-container--1030px">
+            <% if (typeof info !='undefined' ) { %>
+              <% info.points.pointNumbers.forEach(pointNumber=> { %>
+                <div class="c-info__pointblock">
+                  <div class="c-info__pointheading">
+                    <div class="c-info__number">
+                      <img class="c-info__numberimg" src="<%= pointNumber.url %>" alt="<%= pointNumber.title %>" />
+                      <hr class="c-info__linebreak" />
+                      <label class="c-info__label">POINT</label>
+                    </div>
+
+                    <div class="c-info__headingcontent u-width--420px">
+                      <h2 class="c-info__bigheading u-greentext">
+                        <%= pointNumber.title %>
+                      </h2>
+
+                      <p class="c-info__smallheading is-pconly">
+                        <%= pointNumber.description %>
+                      </p>
+
+                      <p class="c-info__smallheading is-pconly">
+                        <%= pointNumber.description2 %>
+                      </p>
+                    </div>
+
+                    <p class="c-info__smallheading is-sponly">
+                      <%= pointNumber.description %>
+                        <span class="c-info__smallheading is-sponly c-info__smallheading--aligned">
+                          <%= pointNumber.description2 %>
+                        </span>
+                    </p>
+                  </div>
+
+                  <div class="c-info__images c-info__image<%= pointNumber.id %>">
+                    <% pointNumber.pointImages.forEach(pointImage=> { %>
+                      <div class="c-info__imagecontainer">
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="<%= pointImage.urlsp %>" />
+                          <img class="c-info__image" src="<%= pointImage.url %>" alt="<%= pointImage.title %>" />
+                        </picture>
+
+                        <img class="c-info__more c-info__more<%= pointImage.point %>"
+                          src="./assets/img/point/point_more.png" alt="more" />
+
+                        <div class="c-info__overlay">
+                          <h3 class="c-info__overlayheading c-info__overlayheading<%= pointNumber.id %> u-greentext">
+                            <%= pointImage.title %>
+                          </h3>
+
+                          <hr class="c-info__overlaylinebreak" />
+
+                          <p class="c-info__overlaydescription">
+                            <%= pointImage.description %>
+                          </p>
+
+                          <label class="c-info__overlaylabel c-info__overlaylabel<%= pointNumber.id %> u-whitetext"><a
+                              href="#column">ハッカ油コラムへ</a>
+                          </label>
+                        </div>
+                      </div>
+                    <% }) %>
+                  </div>
+                </div>
+              <% }) %>
+            <%} %>
+          </div>
+
+          <!-- Brand -->
+          <!-- ********************* -->
+          <div class="c-info__brand l-container">
+            <h2 class="c-info__brandheading u-greentext">
+              お買い求めは全国のドラッグストア<br class="is-sponly" />、またはこちらから
+            </h2>
+
+            <div class="c-info__brandlogos">
+              <% info.brands.forEach(brand=> { %>
+                <a href="#" target="_blank">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="<%= brand.urlsp %>" />
+                    <img class="c-info__brandlogo" src="<%= brand.url %>" alt="お買い求めは全国のドラッグストア、またはこちらから" />
+                  </picture>
+                </a>
+              <%}) %>
+            </div>
+
+            <p class="c-info__brandnote u-black333text">
+              Amazon、Amazon.co.jp、及びAmazon.co.&shy;jpロゴはAmazon.com,
+              Inc.又はその関連会社の商標です。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Q&A -->
+      <!-- *********************************** -->
+      <section id="qa" class="c-qa l-container l-container--860px p-scroll">
+        <div class="c-qa__content">
+          <h2 class="c-qa__heading u-greentext">Q&A</h2>
+
+          <dl class="c-qa__list">
+            <% qas.forEach(qa=> { %>
+              <div class="c-qa__questionanswer">
+                <dt class="c-qa__question">
+                  <img class="c-qa__icon" src="./assets/img/qa/qa_icon.png" alt="question" />
+
+                  <p class="c-qa__questioncontent u-greentext">
+                    <%= qa.question %>
+                  </p>
+                </dt>
+
+                <dd class="c-qa__answer u-black333text">
+                  <%= qa.answer %>
+                </dd>
+              </div>
+            <% }) %>
+          </dl>
+        </div>
+      </section>
+
+      <!-- COLUMN -->
+      <!-- *********************************** -->
+      <section id="column" class="c-column p-scroll">
+        <div class="l-container--1030px">
+          <h2 class="c-column__heading">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./assets/img/column/column_headingcover_mobile.jpg" />
+              <img class="c-column__headingimg u-scalehalf" src="./assets/img/column/column_headingcover.jpg"
+                alt="日々の暮らしにお役立ち「ハッカ油コラム」へ" />
+            </picture>
+          </h2>
+
+          <div class="c-column__list l-container--860px">
+            <% columns.forEach(column=> { %>
+              <div onclick="window.location.href='#'" class="c-column__articleblock">
+                <div class="c-column__article">
+                  <div class="c-column__header">
+                    <picture>
+                      <source media="(max-width: 767px)"
+                        srcset="./assets/img/column/column_<%= column.id %>_mobile.png" />
+                      <img class="c-column__headerimg" src="./assets/img/column/column_<%= column.id %>.jpg"
+                        alt="<%= column.title %>" />
+                    </picture>
+
+                    <div class="c-column__headerheading">
+                      <p class="c-column__headerheadingp u-black333text u-spacing--1p4px">
+                        <%= column.titleNote %>
+                      </p>
+
+                      <h3 class="c-column__headerheadingh3 c-column__title u-black333text">
+                        <%= column.title %>
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="c-column__description is-sphidden">
+                    <p class="u-black333text is-sphidden">
+                      <%= column.description %>
+                    </p>
+
+                    <div class="is-sponly c-column__seemoreblock">
+                      <a href="#" class="c-column__seemore">詳しく見る</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="is-pconly">
+                  <img class="c-column__arrow" src="./assets/img/column/column_arrow.png" alt="go-to arrow" />
+                </div>
+              </div>
+
+              <div class="c-column__sparrowblock c-info__overlay--flex is-sponly">
+                <img class="c-column__sparrow is-sponly u-scalehalf" src="./assets/img/column/column_arrow_mobile.png"
+                  alt="go-to arrow" />
+              </div>
+            <% }) %>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- animation-->
+    <!-- Leaf -->
+    <div class="c-banner__leaves">
+      <picture>
+        <source media="(max-width: 1024px)" srcset="./assets/img/animation/leaf_top_mobile.png" />
+        <img class="c-banner__leaftop u-fixed is-notindented--top u-scalehalf" src="./assets/img/animation/leaf_top.png"
+          alt="leaf top" />
+      </picture>
+
+      <picture>
+        <source media="(max-width: 1024px)" srcset="./assets/img/animation/leaf_right_mobile.png" />
+        <img class="c-banner__leafright u-fixed is-notindented--right u-scalehalf"
+          src="./assets/img/animation/leaf_right.png" alt="leaf right" />
+      </picture>
+    </div>
+
+    <!-- Bubble -->
+    <div class="c-banner__drops is-shown is-pconly">
+      <% for (let i=1; i<=6; i++) { %>
+        <img
+          class="c-banner__drop c-banner__drop<%= i %> u-absolute u-originalscaled<% if (i % 2 == 0) { %> u-downup <% } else { %> u-updown <% } %>"
+          src="<%= animation.drops[i-1].src %>" alt="<%= animation.drops[i-1].alt %>" />
+        <% } %>
+    </div>
+  </main>
+<!-- @@content -->

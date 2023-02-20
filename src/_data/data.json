@@ -1,0 +1,344 @@
+{
+  "linklists": {
+    "main": [
+      {
+        "title": "トップ",
+        "url": "#top"
+      },
+      {
+        "title": "毎日にハッカ油",
+        "url": "#daily"
+      },
+      {
+        "title": "製品情報",
+        "url": "#info"
+      },
+      {
+        "title": "Q&A",
+        "url": "#qa"
+      },
+      {
+        "title": "ハッカ油コラム",
+        "url": "#column"
+      },
+      {
+        "title": "ハッカ油ムービー",
+        "url": "#footer"
+      }
+    ]
+  },
+  "dailyItems": [
+    {
+      "urlmobile": "./assets/img/daily/daily_bottle_mobile.png",
+      "url": "./assets/img/daily/daily_bottle.png",
+      "title": "ハッカ水",
+      "id": "1",
+      "recommend": "./assets/img/daily/daily_use.png",
+      "recommendmobile": "./assets/img/daily/daily_use_mobile.png"
+    },
+    {
+      "urlmobile": "./assets/img/daily/daily_spray_mobile.png",
+      "url": "./assets/img/daily/daily_spray.png",
+      "title": "ハッカの虫除けスプレー",
+      "id": "2"
+    },
+    {
+      "urlmobile": "./assets/img/daily/daily_iron_mobile.png",
+      "url": "./assets/img/daily/daily_iron.png",
+      "title": "ハッカのリネンウォーター",
+      "id": "3"
+    },
+    {
+      "urlmobile": "./assets/img/daily/daily_smallspray_mobile.png",
+      "url": "./assets/img/daily/daily_smallspray.png",
+      "title": "ハッカのエアフレッシュナー",
+      "id": "4",
+      "recommend": "./assets/img/daily/daily_use.png",
+      "recommendmobile": "./assets/img/daily/daily_use_mobile.png"
+    },
+    {
+      "urlmobile": "./assets/img/daily/daily_gelcontainer_mobile.png",
+      "url": "./assets/img/daily/daily_gelcontainer.png",
+      "title": "ハッカの清涼スプレー",
+      "id": "5"
+    },
+    {
+      "urlmobile": "./assets/img/daily/daily_mask_mobile.png",
+      "url": "./assets/img/daily/daily_mask.png",
+      "title": "ハッカマスク",
+      "id": "6",
+      "recommend": "./assets/img/daily/daily_recommend.png",
+      "recommendmobile": "./assets/img/daily/daily_recommend_mobile.png"
+    },
+    {
+      "urlmobile": "./assets/img/daily/daily_pillow_mobile.png",
+      "url": "./assets/img/daily/daily_pillow.png",
+      "title": "ハッカで安息",
+      "id": "7"
+    },
+    {
+      "urlmobile": "./assets/img/daily/daily_bathtub_mobile.png",
+      "url": "./assets/img/daily/daily_bathtub.png",
+      "title": "ハッカの入浴剤",
+      "id": "8"
+    }
+  ],
+  "info": {
+    "points": {
+      "pointNumbers": [
+        {
+          "id": 1,
+          "url": "./assets/img/point/point_1/point_1.png",
+          "title": "気持ちリフレッシュ",
+          "description": "鼻や口から入った香りの信号は、視床下部などに直接作用し",
+          "description2": "気分をリフレッシュさせてくれます。",
+          "pointImages": [
+            {
+              "id": 11,
+              "title": "部屋干しも安心",
+              "description": "湿気の多い梅雨の季節の部屋干しにはハッカ油が大活躍！優しい自然な香りですっきりさわやか。",
+              "url": "./assets/img/point/point_1/point_11.jpg",
+              "urlsp": "./assets/img/point/point_1/point_11_sp.jpg",
+              "point": 1
+            },
+            {
+              "id": 12,
+              "title": "気分転換に",
+              "description": "集中力が低下してきたときはハッカ油でリフレッシュ。気分もすっきり眠気覚ましに最適です。",
+              "url": "./assets/img/point/point_1/point_12.jpg",
+              "point": 1
+            },
+            {
+              "id": 13,
+              "title": "外出のお供に",
+              "description": "遠足やピクニックで思いっきり遊んでも、ハッカ油のおしぼりをサッと取り出していつでも清潔。",
+              "url": "./assets/img/point/point_1/point_13.jpg",
+              "point": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "url": "./assets/img/point/point_2/point_2.png",
+          "title": "気持ちリフレッシュ",
+          "description": "メントールの刺激ですっきりクールダウン。",
+          "description2": "ミントの香りで気分も爽快！",
+          "pointImages": [
+            {
+              "id": 21,
+              "title": "スッと冷却",
+              "description": "暑くて体に熱がこもりがちな暑い季節はハッカ油でクールダウン。心地の良い涼しさを味わえます。",
+              "url": "./assets/img/point/point_2/point_21.jpg",
+              "urlsp": "./assets/img/point/point_2/point_21_sp.jpg",
+
+              "point": 2
+            },
+            {
+              "id": 22,
+              "title": "花粉の季節に",
+              "description": "ハッカマスクでブルーな気分も吹き飛ばしてくれます。",
+              "url": "./assets/img/point/point_2/point_22.jpg",
+              "point": 2
+            },
+            {
+              "id": 23,
+              "title": "足湯に",
+              "description": "ひんやり爽快。ハッカ油で寝苦しい夜もすっきり。さわやかな香りで気分もリフレッシュ。",
+              "url": "./assets/img/point/point_2/point_23.jpg",
+              "point": 2
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "url": "./assets/img/point/point_3/point_3.png",
+          "title": "ハウスキーピング",
+          "description": "ハッカ油に含まれるメントールは、お部屋のスッキリを演出。",
+          "description2": "お家の害虫対策にもおすすめです。",
+          "pointImages": [
+            {
+              "id": 31,
+              "title": "嫌な害虫を撃退",
+              "description": "キッチンなどに現れる嫌な害虫はハッカ油がシャットアウト！ 清涼感あふれる香りでお部屋を守ります。",
+              "url": "./assets/img/point/point_3/point_31.jpg",
+              "urlsp": "./assets/img/point/point_3/point_31_sp.jpg",
+
+              "point": 3
+            },
+            {
+              "id": 32,
+              "title": "窓ガラスに",
+              "description": "自然素材のハッカ油で手肌にも優しくハウスキーピング。手軽に作れるガラスクリーナーでピカピカに。",
+              "url": "./assets/img/point/point_3/point_32.jpg",
+              "point": 3
+            },
+            {
+              "id": 33,
+              "title": "シューピローに",
+              "description": "お部屋の悪臭にはハッカ油が迎え撃ち！ 嫌な匂いがこもりがちな靴にハッカ油のシューピローを。",
+              "url": "./assets/img/point/point_3/point_33.jpg",
+              "point": 3
+            }
+          ]
+        }
+      ]
+    },
+    "brands": [
+      {
+        "url": "./assets/img/point/brand/brand_amazon.jpg",
+        "urlsp": "./assets/img/point/brand/brand_amazon_sp.jpg"
+      },
+      {
+        "url": "./assets/img/point/brand/brand_kenko.jpg",
+        "urlsp": "./assets/img/point/brand/brand_kenko_sp.jpg"
+
+      },
+      {
+        "url": "./assets/img/point/brand/brand_lohaco.jpg",
+        "urlsp": "./assets/img/point/brand/brand_lohaco_sp.jpg"
+
+      },
+      {
+        "url": "./assets/img/point/brand/brand_hamster.jpg",
+        "urlsp": "./assets/img/point/brand/brand_hamster_sp.jpg"
+
+      }
+    ]
+  },
+  "qas": [
+    {
+      "question": "虫除け対策に直接体や環境に噴きかけても良いですか？",
+      "answer": "刺激が強過ぎる可能性がありますので、薄めて使用してください。また素材によっては変質(変色)するおそれがありますので注意してください。"
+    },
+    {
+      "question": "体に使用する際の注意点は？",
+      "answer": "刺激作用があるため、目や目の周囲、粘膜等に付着しないように注意してください。"
+    },
+    {
+      "question": "ハッカ油アイテムを作る際に使用する量は紹介されている量を守らないといけませんか？",
+      "answer": "紹介している量はあくまでも目安になります。ただし、これ以上の量を加えると刺激が強過ぎる可能性があるので注意してください。"
+    },
+    {
+      "question": "使用期限はどのくらいですか？",
+      "answer": "パッケージ裏面に賞味期限を記載しています。遮光して、涼しい所に保管してください。"
+    },
+    {
+      "question": "ハッカ油は何からできたものですか？",
+      "answer": "ハッカ油とはハッカソウというミントを乾燥させて抽出した植物油のことです。"
+    }
+  ],
+  "columns": [
+    {
+      "id": "11",
+      "titleNote": "風邪をひきやすい冬も安心",
+      "title": "風邪やインフルエンザシーズンにもハッカ油",
+      "description": "風邪をひきやすくなる冬、朝起きたら喉がガラガラなんていうことはありませんか？　実はこれ、夜寝ている間にウイルスが体内で増殖してしまった証拠かもしれません。寒さと乾燥の厳しい冬の風邪は、夜寝ている間に悪化しやすいといわれています。そんな季節に役立つハッカ油の使い方をご紹介します。"
+    },
+    {
+      "id": "10",
+      "titleNote": "万能だからこそ知っておこう",
+      "title": "ハッカ油を安全に使うためのルール",
+      "description": "防虫、消臭、除菌、リラックスなど、さまざまな効果が期待できるハッカ油は使えば使うほど万能で、生活のあらゆる場面で欠かせなくなってきます。しかし、だからこそ知っておきたいのがハッカ油を安全に使うためのルールです。ハッカ油ならではの性質に着目して、保管から具体的な使う上での注意点についてご紹介します。"
+    },
+    {
+      "id": "09",
+      "titleNote": "涼しいオアシスタイム",
+      "title": "ハッカ油の冷却パワーを上手に使おう",
+      "description": "湯上りやスポーツの後など、熱のこもった体を手早くクールダウンしたい時もハッカ油の出番です。蒸発する際に周囲の熱を奪う性質があるので、さわやかな香りを放ちながらすっきりと冷却してくれます。いつでも手軽に使えるハッカ油の清涼スプレーの作り方を紹介しますので、まずは一本作ってみて、その効果をお試しあれ。"
+    },
+    {
+      "id": "08",
+      "titleNote": "気分転換の強い味方",
+      "title": "ハッカ油でリラックス&リフレッシュ",
+      "description": "疲れているのに寝付けない、試験勉強がはかどらない、楽しみな旅行も乗り物酔いで台なし……。そんな時こそ、ハッカ油でリラックス＆リフレッシュ。ハッカ油のさわやかな香りは濃度によって効果が異なり、しっかり使えば気分転換に、量を控えれば気持ちを落ち着かせる作用があります。状況に応じてうまく使い分けましょう。"
+    },
+    {
+      "id": "07",
+      "titleNote": "嫌な匂いはサヨウナラ、ブーツや靴などに",
+      "title": "ハッカ油の消臭マジック！",
+      "description": "ニオイ対策にも使用できるハッカ油は、お口の不快感対策の他、排水溝や下駄箱などで消臭剤としても活用できます。消臭スプレーや芳香剤の人工的な香りよりも、気持ち良く使える人が多いはず。体に優しいハッカ油の即席マウスケアや防臭シューピローを作って、ぜひ試してみてください。"
+    },
+    {
+      "id": "06",
+      "titleNote": "香りと抗菌のダブルパワー",
+      "title": "衣類がハッカ油でよみがえる！？",
+      "description": "ハッカ油の香りと抗菌効果は、衣類の手入れや保管でも力を発揮。洗濯のすすぎ時に数滴混ぜれば部屋干しする際に雑菌の繁殖を抑えてくれるし、匂い袋にしてタンスに入れれば防虫効果も期待できます。身に付ける自分自身はもちろん、お会いする相手のためにも、ハッカ油を使って衣類を気持ちの良い状態に保ちましょう。"
+    },
+    {
+      "id": "05",
+      "titleNote": "いつでもどこでもサッと使える",
+      "title": "ハッカ油スプレーで携帯ハッカ油を始めよう",
+      "description": "除菌・消臭効果が期待できるハッカ油は、手作りスプレーにして携帯すれば、いろいろなシーンで大活躍。車にこもった嫌な臭い、食事で衣服に付いたきつい匂いも、シュッと一噴きで簡単にリフレッシュ。自然素材だから、小さな子どもを抱っこするママも気持ちよく使えます。万能なハッカ油をしっかり活用してください。"
+    },
+    {
+      "id": "04",
+      "titleNote": "使わないなんてもったいない",
+      "title": "ハッカ油は万能ハウスクリーナー",
+      "description": "自然素材を使って掃除したい人にもハッカ油はおすすめ。除菌・防カビ・消臭効果が期待でき、掃除や食器の手入れにも使えます。炭酸水や重曹に数滴混ぜるだけの簡単クリーナーで、家中ピカピカに磨き上げましょう！ 合成洗剤のように手荒れの心配もなく、何より、さわやかな香りが心地良いため面倒な掃除も頑張れそうです。"
+    },
+    {
+      "id": "03",
+      "titleNote": "おうちでサロン気分",
+      "title": "ハッカ油で楽しいバスタイム",
+      "description": "バスタイムを満喫できるさまざまな入浴剤やバスソルトが市販されていますが、実はハッカ油を入浴剤として使ってもOK。湯上りがさっぱりとして、気分爽快！ またシャンプーやボディーソープに混ぜて使えば、汗でべたべたする頭皮や肌をすっきり引き締めてくれます。ジメジメする梅雨時期や、汗をかく夏場の入浴には特におすすめです。"
+    },
+    {
+      "id": "02",
+      "titleNote": "マスクにシュッシュと一噴き",
+      "title": "ハッカ油で上手に生活管理！",
+      "description": "ハッカ油はマスクにシュッと一噴きすることで生活管理に役立てることができます。体調がすぐれず沈みがちな気分も、清涼感のある香りがリフレッシュしてくれます。ハッカ油を上手に使って、健やかな暮らしを叶えましょう。"
+    },
+    {
+      "id": "01",
+      "titleNote": "害虫も怖くない",
+      "title": "さわやかハッカ油で虫除け対策！",
+      "description": "ハッカ油の清涼感ある香りは人間には心地良いですが、多くの害虫は大の苦手。この性質を利用して、安心安全な天然の虫除け剤を手作りしてみましょう。身体に直接湿布するのはもちろん、網戸にシュッと一噴きしたり、キッチンの水回りなどに液剤を染み込ませたコットンを置いたりと、さまざまな用途に使えます。"
+    }
+  ],
+  "animation": {
+    "drops": [
+      {
+        "id": 1,
+        "src": "./assets/img/animation/drop1.png",
+        "alt": "drop1"
+      },
+      {
+        "id": 2,
+        "src": "./assets/img/animation/drop2.png",
+        "alt": "drop2"
+      },
+      {
+        "id": 3,
+        "src": "./assets/img/animation/drop3.png",
+        "alt": "drop3"
+      },
+      {
+        "id": 4,
+        "src": "./assets/img/animation/drop4.png",
+        "alt": "drop4"
+      },
+      {
+        "id": 5,
+        "src": "./assets/img/animation/drop5.png",
+        "alt": "drop5"
+      },
+      {
+        "id": 6,
+        "src": "./assets/img/animation/drop6.png",
+        "alt": "drop6"
+      }
+    ],
+    "leaves": [
+      {
+        "src": "./assets/img/animation/leaf_right.png",
+        "alt": "leaf right",
+        "class": "c-banner__leafright"
+      },
+      {
+        "src": "./assets/img/animation/leaf_top.png",
+        "alt": "leaf top",
+        "class": "c-banner__leaftop"
+      }
+    ]
+  }
+}

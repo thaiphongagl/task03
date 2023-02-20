@@ -1,0 +1,105 @@
+.c-header {
+    position: fixed;
+    z-index: 10;
+    margin-top: 66px;
+
+    @include tab {
+        padding: 0 30px;
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        background: #1f4242;
+        transition: height 0.5s ease;
+        overflow-y: auto;
+
+        @include sp {
+            padding: 0;
+        }
+    }
+
+    .c-header__nav {
+        @include tab {
+            margin-top: 75px;
+        }
+    }
+
+    .c-header__navitem {
+        margin-bottom: 15px;
+
+        &:nth-child(2n) {
+            transform: translateY(-1px);
+        }
+
+        @include tab {
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(0);
+        }
+
+        @include sp {
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6) {
+                .c-header__navtext {
+                    margin-top: -9px;
+                }
+            }
+        }
+    }
+
+    .c-header__navlink {
+        display: flex;
+        background: url(./assets/img/header/header_background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 198px;
+        height: 40px;
+        align-items: center;
+
+        @include tab {
+            height: 80px;
+            width: 100%;
+            background: none;
+            justify-content: center;
+            transition: unset;
+            border-bottom: 1px solid #3a5656;
+            box-shadow: 0 1px 0 #1d3636;
+            margin: 0 15px;
+        }
+    }
+
+    .c-header__navtext {
+        font-size: 1.6rem;
+        top: 4px;
+        margin-left: 20px;
+        letter-spacing: 1.4px;
+
+        @include tab {
+            margin-left: 0;
+        }
+
+        @include sp {
+            font-size: 2rem;
+            margin-left: -1px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .c-header__leafmenu {
+        pointer-events: none;
+        position: absolute;
+        zoom: 75%;
+    }
+
+    .c-header__leaftopmenu {
+        top: 0;
+        left: 0;
+    }
+
+    .c-header__leafrightmenu {
+        right: 0;
+        top: 50.9%;
+    }
+}

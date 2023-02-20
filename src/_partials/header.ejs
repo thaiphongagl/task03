@@ -1,0 +1,21 @@
+<header class="c-header is-tabandspnotvisible">
+  <nav class="c-header__nav">
+    <ul>
+      <% if (typeof linklists !='undefined' ) { %>
+        <% linklists.main && linklists.main.forEach(link=> { %>
+          <li class="c-header__navitem">
+            <a class="c-header__navlink u-whitetext" href="<%= link.url %>">
+              <span class="c-header__navtext">
+                <%= link.title %>
+              </span>
+            </a>
+          </li>
+          <% }) %>
+            <% } %>
+    </ul>
+  </nav>
+  <img class="c-header__leafmenu c-header__leaftopmenu is-notdisplayed u-scalehalf"
+    src="./assets/img/animation/leaf_top_menu_mobile.png" alt="leaf top menu mobile" />
+  <img class="c-header__leafmenu c-header__leafrightmenu is-notdisplayed u-scalehalf"
+    src="./assets/img/animation/leaf_right_menu_mobile.png" alt="leaf right menu mobile" />
+</header>

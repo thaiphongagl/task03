@@ -1,0 +1,152 @@
+.c-footer {
+    padding: 0 30px 30px;
+
+    @include tab {
+        padding: 0 15px 15px;
+    }
+
+    .c-footer__container {
+        padding-top: 50px;
+        margin-top: -1px;
+        background-color: #fff;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        @include tab {
+            padding-top: 0;
+        }
+
+        @include sp {
+            padding-top: 24px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .c-footer__headingimg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .c-footer__image {
+        border-radius: 50px;
+
+        &:hover {
+            @include hover-effect;
+        }
+
+        @include tab {
+            border-radius: 20px;
+        }
+
+        @include sp {
+            border-radius: 50px;
+        }
+    }
+
+    .c-footer__contact {
+        margin-top: 114px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding-bottom: 65px;
+
+        @include tab {
+            margin-top: 25px;
+            display: block;
+
+        }
+
+        @include sp {
+            margin-top: 61px;
+            padding-bottom: 45px;
+        }
+    }
+
+    .c-footer__contactinfo {
+        letter-spacing: 1.5px;
+        line-height: 1.7;
+        transform: translateY(-1px);
+
+        @include tab {
+            margin-bottom: 25px;
+
+        }
+
+        @include sp {
+            font-size: 1.3rem;
+            margin-top: -6px;
+            letter-spacing: 0;
+            margin-bottom: 24px;
+        }
+    }
+
+    .c-footer__contactinfocontent {
+        color: #282828;
+        font-weight: 400;
+        font-size: 1.4rem;
+
+        @include sp {
+            font-size: 1.3rem;
+            color: #000;
+        }
+    }
+
+    .c-footer__phonenumber {
+        &:hover {
+            @include hover-effect;
+        }
+    }
+
+    .c-footer__logo {
+        position: relative;
+
+        @include tab {
+            text-align: center;
+        }
+    }
+}
+
+.c-footer__logoblock {
+    position: absolute;
+    top: 6px;
+    right: 0;
+
+    @include tab {
+        position: static;
+    }
+
+    &:hover {
+        @include hover-effect;
+    }
+}
+
+.c-footer__logoimg {
+    @include tab {
+        position: static;
+
+    }
+
+    @include sp {
+        margin-bottom: 20px;
+    }
+}
+
+.c-footer__brand {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    letter-spacing: 1.4px;
+    text-align: right;
+
+    @include tab {
+        position: static;
+        text-align: unset;
+
+    }
+
+    @include sp {
+        letter-spacing: -0.1px;
+        margin-left: -2px;
+    }
+}
