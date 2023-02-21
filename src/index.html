@@ -50,28 +50,28 @@
         <div class="c-daily__uses">
           <% if (typeof dailyItems !='undefined' ) { %>
             <% dailyItems.forEach(dailyItem=> { %>
-              <a href="#">
-                <div class="c-daily__use c-daily__use<%= dailyItem.id %>">
+
+              <a href="#" class="c-daily__use c-daily__use<%= dailyItem.id %>">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<%= dailyItem.urlmobile %>" />
+                  <img class="c-daily__useimg u-scalehalf" src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>" />
+                </picture>
+
+                <label class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text is-aligned">
+                  <%= dailyItem.title %>
+                </label>
+
+                <% if (dailyItem.recommend) { %>
                   <picture>
-                    <source media="(max-width: 767px)" srcset="<%= dailyItem.urlmobile %>" />
-                    <img class="c-daily__useimg u-scalehalf" src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>" />
+                    <source media="(max-width: 767px)" srcset="<%= dailyItem.recommendmobile %>" />
+                    <img class="c-daily__recommend c-daily__recommend<%= dailyItem.id %> u-absolute u-scalehalf"
+                      src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>" />
                   </picture>
-
-                  <label class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text is-aligned">
-                    <%= dailyItem.title %>
-                  </label>
-
-                  <% if (dailyItem.recommend) { %>
-                    <picture>
-                      <source media="(max-width: 767px)" srcset="<%= dailyItem.recommendmobile %>" />
-                      <img class="c-daily__recommend c-daily__recommend<%= dailyItem.id %> u-absolute u-scalehalf"
-                        src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>" />
-                    </picture>
-                    <% } %>
-                </div>
+                  <% } %>
               </a>
-            <% }) %>
-          <% } %>
+
+              <% }) %>
+                <% } %>
         </div>
       </section>
 
@@ -139,11 +139,11 @@
                           </label>
                         </div>
                       </div>
-                    <% }) %>
+                      <% }) %>
                   </div>
                 </div>
-              <% }) %>
-            <%} %>
+                <% }) %>
+                  <%} %>
           </div>
 
           <!-- Brand -->
@@ -161,7 +161,7 @@
                     <img class="c-info__brandlogo" src="<%= brand.url %>" alt="お買い求めは全国のドラッグストア、またはこちらから" />
                   </picture>
                 </a>
-              <%}) %>
+                <%}) %>
             </div>
 
             <p class="c-info__brandnote u-black333text">
@@ -178,23 +178,23 @@
         <div class="c-qa__content">
           <h2 class="c-qa__heading u-greentext">Q&A</h2>
 
-          <dl class="c-qa__list">
-            <% qas.forEach(qa=> { %>
-              <div class="c-qa__questionanswer">
-                <dt class="c-qa__question">
-                  <img class="c-qa__icon" src="./assets/img/qa/qa_icon.png" alt="question" />
 
-                  <p class="c-qa__questioncontent u-greentext">
-                    <%= qa.question %>
-                  </p>
-                </dt>
+          <% qas.forEach(qa=> { %>
+            <dl class="c-qa__questionanswer">
+              <dt class="c-qa__question">
+                <img class="c-qa__icon" src="./assets/img/qa/qa_icon.png" alt="question" />
 
-                <dd class="c-qa__answer u-black333text">
-                  <%= qa.answer %>
-                </dd>
-              </div>
+                <p class="c-qa__questioncontent u-greentext">
+                  <%= qa.question %>
+                </p>
+              </dt>
+
+              <dd class="c-qa__answer u-black333text">
+                <%= qa.answer %>
+              </dd>
+            </dl>
             <% }) %>
-          </dl>
+
         </div>
       </section>
 
@@ -253,7 +253,7 @@
                 <img class="c-column__sparrow is-sponly u-scalehalf" src="./assets/img/column/column_arrow_mobile.png"
                   alt="go-to arrow" />
               </div>
-            <% }) %>
+              <% }) %>
           </div>
         </div>
       </section>
@@ -284,4 +284,4 @@
         <% } %>
     </div>
   </main>
-<!-- @@content -->
+  <!-- @@content -->

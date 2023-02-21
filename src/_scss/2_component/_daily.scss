@@ -62,15 +62,25 @@
             grid-template-rows: repeat(8, 1fr);
             padding-top: 75px;
             overflow: hidden;
+
         }
     }
 
     .c-daily__use {
         position: relative;
+        display: flex;
+        width: max-content;
+
+        @include sp {
+            display: unset;
+            width: unset;
+        }
     }
 
     .c-daily__label {
-        position: absolute;
+        position: relative;
+        height: max-content;
+        left: 0;
 
         @include tab {
             padding-bottom: 0;
@@ -78,6 +88,8 @@
         }
 
         @include sp {
+            position: absolute;
+            height: unset;
             font-size: 1.3rem;
         }
     }
@@ -103,11 +115,10 @@
 
     .c-daily__label1 {
         top: 36px;
-        left: 54px;
 
         @include tab {
             top: 23px;
-            left: 54px;
+            // left: 54px;
             letter-spacing: 1.7px;
         }
 
@@ -119,23 +130,30 @@
     }
 
     .c-daily__recommend1 {
-        top: -53px;
-        left: -50px;
+        top: -49px;
+        left: -36px;
+        transform: scale(1.2);
 
         @include tab {
             top: -50px;
             left: -47px;
+            transform: none;
         }
 
         @include sp {
             top: -50px;
             left: -97px;
+            transform: none;
         }
     }
 
     .c-daily__use2 {
-        left: -14.2%;
+        left: -1%;
         top: 19.2%;
+
+        @media only screen and (max-width: 1200px) {
+            left: 8%;
+        }
 
         @include tab {
             top: 0;
@@ -150,11 +168,11 @@
 
     .c-daily__label2 {
         top: 39px;
-        left: 50px;
+        left: -3px;
 
         @media only screen and (max-width: 1200px) {
             max-width: 150px;
-            left: 53px;
+            left: 0;
 
             @include tab {
                 letter-spacing: 1.9px;
@@ -173,11 +191,11 @@
 
     .c-daily__use3 {
         top: 28px;
-        left: -54px;
+        left: -30px;
 
         @include tab {
             top: 0;
-            left: 25.6%;
+            left: 23.6%;
         }
 
         @include sp {
@@ -188,17 +206,16 @@
 
     .c-daily__label3 {
         top: 38px;
-        left: 83px;
         width: 203px;
         padding: 1px 0 4px 16px;
 
         @media only screen and (max-width: 1200px) {
             max-width: 150px;
-            left: 80px;
+            left: 0;
 
             @include tab {
                 top: 49px;
-                left: 80px;
+                left: 0;
                 letter-spacing: 1.8px;
                 padding-bottom: 0;
                 max-width: unset;
@@ -218,7 +235,9 @@
 
     .c-daily__use4 {
         top: -13px;
-        left: -8px;
+        left: 10px;
+
+
 
         @include tab {
             top: 0;
@@ -233,9 +252,17 @@
 
     .c-daily__label4 {
         top: 57px;
-        left: 41px;
+        left: 0;
         padding-left: 20px;
         padding-bottom: 4px;
+
+        @media only screen and (max-width: 1200px) {
+            max-width: 150px;
+        }
+
+        @include tab {
+            max-width: max-content;
+        }
 
         @include sp {
             top: 45px;
@@ -260,9 +287,13 @@
         top: 59px;
         left: 92px;
 
+        @media only screen and (max-width: 1200px) {
+            left: 75px;
+        }
+
         @include tab {
             top: 0;
-            left: 25.6%;
+            left: 23.6%;
         }
 
         @include sp {
@@ -273,15 +304,15 @@
 
     .c-daily__label5 {
         top: 23px;
-        left: 50px;
+        left: -10px;
 
         @media only screen and (max-width: 1200px) {
             max-width: 130px;
-            left: 55px;
+            left: 0;
 
             @include tab {
                 top: 25px;
-                left: 38px;
+                left: 0;
                 letter-spacing: 1.8px;
                 padding-bottom: 0;
                 max-width: unset;
@@ -299,7 +330,7 @@
 
     .c-daily__use6 {
         top: 109px;
-        left: 42px;
+        left: 79px;
 
         @include tab {
             top: 0;
@@ -314,7 +345,7 @@
 
     .c-daily__label6 {
         top: 53px;
-        left: 101px;
+        left: -55px;
         padding-left: 45px;
 
         @include sp {
@@ -336,11 +367,13 @@
 
     .c-daily__use7 {
         top: 81px;
-        left: 96px;
+        left: 15px;
+        flex-direction: row-reverse;
 
         @include tab {
             top: 0;
-            left: 25.6%;
+            left: 20.6%;
+            flex-direction: unset;
         }
 
         @include sp {
@@ -351,14 +384,14 @@
 
     .c-daily__label7 {
         top: 20px;
-        left: -98px;
+        left: 6px;
         padding-left: 1px;
         padding-bottom: 4px;
         padding-right: 10px;
 
         @include tab {
             top: 8px;
-            left: 123px;
+            left: 0;
             padding-bottom: 1px;
         }
 
@@ -371,27 +404,25 @@
 
     .c-daily__use8 {
         top: -6px;
-        left: 38px;
+        left: -80px;
+        flex-direction: row-reverse;
 
-        @media only screen and (max-width: 1200px) {
-            max-width: 200px;
-
-            @include tab {
-                max-width: 160px;
-                top: 0;
-                left: 53.8%;
-            }
-
-            @include sp {
-                top: -207.9%;
-                left: 66.4%;
-            }
+        @include tab {
+            top: 0;
+            left: 47.8%;
+            max-width: none;
         }
+
+        @include sp {
+            top: -207.9%;
+            left: 66.4%;
+        }
+        
     }
 
     .c-daily__label8 {
         top: 21px;
-        left: -126px;
+        left: 10px;
         padding: 0 28px 4px 0;
 
         @include sp {

@@ -10,6 +10,7 @@
 
     .c-banner__iconmenu {
         display: none;
+        cursor: pointer;
 
         @include tab {
             display: unset;

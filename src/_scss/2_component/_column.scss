@@ -31,12 +31,6 @@
             @include hover-effect;
         }
 
-        &:nth-child(10) {
-            .c-column__arrow {
-                margin-top: 437%;
-            }
-        }
-
         @include sp {
             border-bottom: none;
             display: block;

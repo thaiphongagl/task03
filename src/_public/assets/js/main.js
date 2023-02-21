@@ -80,7 +80,7 @@ function mobileMenuHandler() {
 // click vào menu button để ẩn hiện menu bar
 menuBtnSp.addEventListener("click", function () {
   menuBar.classList.toggle("is-tabandspnotvisible");
-  body.classList.toggle("u-fixed");
+  // body.classList.toggle("u-fixed");
   body.style.top = "0px"
   mobileMenuHandler();
 });
