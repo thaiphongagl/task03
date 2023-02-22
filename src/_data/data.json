@@ -88,6 +88,7 @@
       "pointNumbers": [
         {
           "id": 1,
+          "urlsp": "./assets/img/point/point_1/point_1_mobile.png",
           "url": "./assets/img/point/point_1/point_1.png",
           "title": "気持ちリフレッシュ",
           "description": "鼻や口から入った香りの信号は、視床下部などに直接作用し",
@@ -106,6 +107,7 @@
               "title": "気分転換に",
               "description": "集中力が低下してきたときはハッカ油でリフレッシュ。気分もすっきり眠気覚ましに最適です。",
               "url": "./assets/img/point/point_1/point_12.jpg",
+              "urlsp": "./assets/img/point/point_1/point_12_sp.jpg",
               "point": 1
             },
             {
@@ -113,6 +115,7 @@
               "title": "外出のお供に",
               "description": "遠足やピクニックで思いっきり遊んでも、ハッカ油のおしぼりをサッと取り出していつでも清潔。",
               "url": "./assets/img/point/point_1/point_13.jpg",
+              "urlsp": "./assets/img/point/point_1/point_13_sp.jpg",
               "point": 1
             }
           ]
@@ -120,6 +123,7 @@
         {
           "id": 2,
           "url": "./assets/img/point/point_2/point_2.png",
+          "urlsp": "./assets/img/point/point_2/point_2_mobile.png",
           "title": "気持ちリフレッシュ",
           "description": "メントールの刺激ですっきりクールダウン。",
           "description2": "ミントの香りで気分も爽快！",
@@ -130,7 +134,6 @@
               "description": "暑くて体に熱がこもりがちな暑い季節はハッカ油でクールダウン。心地の良い涼しさを味わえます。",
               "url": "./assets/img/point/point_2/point_21.jpg",
               "urlsp": "./assets/img/point/point_2/point_21_sp.jpg",
-
               "point": 2
             },
             {
@@ -138,6 +141,7 @@
               "title": "花粉の季節に",
               "description": "ハッカマスクでブルーな気分も吹き飛ばしてくれます。",
               "url": "./assets/img/point/point_2/point_22.jpg",
+              "urlsp": "./assets/img/point/point_2/point_22_sp.jpg",
               "point": 2
             },
             {
@@ -145,13 +149,16 @@
               "title": "足湯に",
               "description": "ひんやり爽快。ハッカ油で寝苦しい夜もすっきり。さわやかな香りで気分もリフレッシュ。",
               "url": "./assets/img/point/point_2/point_23.jpg",
+              "urlsp": "./assets/img/point/point_2/point_23_sp.jpg",
               "point": 2
             }
+
           ]
         },
         {
           "id": 3,
           "url": "./assets/img/point/point_3/point_3.png",
+          "urlsp": "./assets/img/point/point_3/point_3_mobile.png",
           "title": "ハウスキーピング",
           "description": "ハッカ油に含まれるメントールは、お部屋のスッキリを演出。",
           "description2": "お家の害虫対策にもおすすめです。",
@@ -162,7 +169,6 @@
               "description": "キッチンなどに現れる嫌な害虫はハッカ油がシャットアウト！ 清涼感あふれる香りでお部屋を守ります。",
               "url": "./assets/img/point/point_3/point_31.jpg",
               "urlsp": "./assets/img/point/point_3/point_31_sp.jpg",
-
               "point": 3
             },
             {
@@ -170,6 +176,7 @@
               "title": "窓ガラスに",
               "description": "自然素材のハッカ油で手肌にも優しくハウスキーピング。手軽に作れるガラスクリーナーでピカピカに。",
               "url": "./assets/img/point/point_3/point_32.jpg",
+              "urlsp": "./assets/img/point/point_3/point_32_sp.jpg",
               "point": 3
             },
             {
@@ -177,6 +184,7 @@
               "title": "シューピローに",
               "description": "お部屋の悪臭にはハッカ油が迎え撃ち！ 嫌な匂いがこもりがちな靴にハッカ油のシューピローを。",
               "url": "./assets/img/point/point_3/point_33.jpg",
+              "urlsp": "./assets/img/point/point_3/point_33_sp.jpg",
               "point": 3
             }
           ]
@@ -186,22 +194,19 @@
     "brands": [
       {
         "url": "./assets/img/point/brand/brand_amazon.jpg",
-        "urlsp": "./assets/img/point/brand/brand_amazon_sp.jpg"
+        "urlsp": "./assets/img/point/brand/brand_amazon_mobile.jpg"
       },
       {
         "url": "./assets/img/point/brand/brand_kenko.jpg",
-        "urlsp": "./assets/img/point/brand/brand_kenko_sp.jpg"
-
+        "urlsp": "./assets/img/point/brand/brand_kenko_mobile.jpg"
       },
       {
         "url": "./assets/img/point/brand/brand_lohaco.jpg",
-        "urlsp": "./assets/img/point/brand/brand_lohaco_sp.jpg"
-
+        "urlsp": "./assets/img/point/brand/brand_lohaco_mobile.jpg"
       },
       {
         "url": "./assets/img/point/brand/brand_hamster.jpg",
-        "urlsp": "./assets/img/point/brand/brand_hamster_sp.jpg"
-
+        "urlsp": "./assets/img/point/brand/brand_hamster_mobile.jpg"
       }
     ]
   },

@@ -1,7 +1,7 @@
 <%- include('_layouts/layout', { title: 'Mentha Oil' }); -%>
 
   <!-- @meta -->
-  <meta name="description" content="Home page" />
+  <meta name="description" content="Mentha Oil">
   <meta name="keywords" content="">
   <!-- @@meta -->
 
@@ -14,20 +14,19 @@
       <section id="banner" class="c-banner p-scroll">
         <div class="c-banner__imgtext l-container">
           <picture>
-            <source media="(max-width: 767px)" srcset="./assets/img/banner/banner_bg_mobile.jpg" />
-            <img class="c-banner__img" src="./assets/img/banner/banner_bg.jpg" alt="ハッカ油" />
+            <source media="(max-width: 767px)" srcset="./assets/img/banner/banner_bg_mobile.jpg">
+            <img class="c-banner__img" src="./assets/img/banner/banner_bg.jpg" alt="ハッカ油">
           </picture>
 
           <div class="c-banner__content">
             <h1 class="c-banner__heading">
               <picture>
-                <source media="(max-width: 767px)" srcset="./assets/img/banner/banner_h1_mobile.png" />
-                <img class="c-banner__headingimg u-scalehalf" src="./assets/img/banner/banner_h1.png"
-                  alt="健栄製薬の ハッカ油" />
+                <source media="(max-width: 767px)" srcset="./assets/img/banner/banner_h1_mobile.png">
+                <img class="c-banner__headingimg u-scalehalf" src="./assets/img/banner/banner_h1.png" alt="健栄製薬の ハッカ油">
               </picture>
             </h1>
 
-            <hr class="c-banner__linebreak" />
+            <hr class="c-banner__linebreak">
             <p class="c-banner__product--en">MENTHA OIL</p>
             <p class="c-banner__slogan">ハッカ油は、毎日の暮らしを豊かにする</p>
             <p class="c-banner__slogan2">魔法のしずく</p>
@@ -38,8 +37,7 @@
           </div>
         </div>
 
-        <img class="c-banner__iconmenu u-scalehalf" src="./assets/img/header/iconmenu_green_mobile.png"
-          alt="icon menu" />
+        <img class="c-banner__iconmenu u-scalehalf" src="./assets/img/header/iconmenu_green_mobile.png" alt="icon menu">
       </section>
 
       <!-- DAILY USE -->
@@ -53,8 +51,8 @@
 
               <a href="#" class="c-daily__use c-daily__use<%= dailyItem.id %>">
                 <picture>
-                  <source media="(max-width: 767px)" srcset="<%= dailyItem.urlmobile %>" />
-                  <img class="c-daily__useimg u-scalehalf" src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>" />
+                  <source media="(max-width: 767px)" srcset="<%= dailyItem.urlmobile %>">
+                  <img class="c-daily__useimg u-scalequater" src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>">
                 </picture>
 
                 <span class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text is-aligned">
@@ -63,9 +61,9 @@
 
                 <% if (dailyItem.recommend) { %>
                   <picture>
-                    <source media="(max-width: 767px)" srcset="<%= dailyItem.recommendmobile %>" />
+                    <source media="(max-width: 767px)" srcset="<%= dailyItem.recommendmobile %>">
                     <img class="c-daily__recommend c-daily__recommend<%= dailyItem.id %> u-absolute u-scalehalf"
-                      src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>" />
+                      src="<%= dailyItem.recommend %>" alt="<%= dailyItem.title %>">
                   </picture>
                   <% } %>
               </a>
@@ -85,8 +83,12 @@
                 <div class="c-info__pointblock">
                   <div class="c-info__pointheading">
                     <div class="c-info__number">
-                      <img class="c-info__numberimg" src="<%= pointNumber.url %>" alt="<%= pointNumber.title %>" />
-                      <hr class="c-info__linebreak" />
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="<%= pointNumber.urlsp %>">
+                        <img class="c-info__numberimg u-scalequater" src="<%= pointNumber.url %>"
+                          alt="<%= pointNumber.title %>">
+                      </picture>
+                      <hr class="c-info__linebreak">
                       <label class="c-info__label">POINT</label>
                     </div>
 
@@ -116,26 +118,30 @@
                     <% pointNumber.pointImages.forEach(pointImage=> { %>
                       <div class="c-info__imagecontainer">
                         <picture>
-                          <source media="(max-width: 767px)" srcset="<%= pointImage.urlsp %>" />
-                          <img class="c-info__image" src="<%= pointImage.url %>" alt="<%= pointImage.title %>" />
+                          <source media="(max-width: 767px)" srcset="<%= pointImage.urlsp %>">
+                          <img class="c-info__image" src="<%= pointImage.url %>" alt="<%= pointImage.title %>">
                         </picture>
 
-                        <img class="c-info__more c-info__more<%= pointImage.point %>"
-                          src="./assets/img/point/point_more.png" alt="more" />
+                        <picture>
+                          <source media="(max-width: 767px)" srcset="./assets/img/point/point_more_mobile.png">
+                          <img class="c-info__more c-info__more<%= pointImage.point %> u-scalequater"
+                            src="./assets/img/point/point_more.png" alt="more">
+                        </picture>
+
 
                         <div class="c-info__overlay">
                           <h3 class="c-info__overlayheading c-info__overlayheading<%= pointNumber.id %> u-greentext">
                             <%= pointImage.title %>
                           </h3>
 
-                          <hr class="c-info__overlaylinebreak" />
+                          <hr class="c-info__overlaylinebreak">
 
                           <p class="c-info__overlaydescription">
                             <%= pointImage.description %>
                           </p>
 
-                          <label class="c-info__overlaylabel c-info__overlaylabel<%= pointNumber.id %> u-whitetext"><a
-                              href="#column">ハッカ油コラムへ</a>
+                          <label class="c-info__overlaylabel c-info__overlaylabel<%= pointNumber.id %> u-whitetext">
+                            <a href="#column">ハッカ油コラムへ</a>
                           </label>
                         </div>
                       </div>
@@ -150,15 +156,15 @@
           <!-- ********************* -->
           <div class="c-info__brand l-container">
             <h2 class="c-info__brandheading u-greentext">
-              お買い求めは全国のドラッグストア<br class="is-sponly" />、またはこちらから
+              お買い求めは全国のドラッグストア<br class="is-sponly">、またはこちらから
             </h2>
 
             <div class="c-info__brandlogos">
               <% info.brands.forEach(brand=> { %>
                 <a href="#" target="_blank">
                   <picture>
-                    <source media="(max-width: 767px)" srcset="<%= brand.urlsp %>" />
-                    <img class="c-info__brandlogo" src="<%= brand.url %>" alt="お買い求めは全国のドラッグストア、またはこちらから" />
+                    <source media="(max-width: 767px)" srcset="<%= brand.urlsp %>">
+                    <img class="c-info__brandlogo" src="<%= brand.url %>" alt="お買い求めは全国のドラッグストア、またはこちらから">
                   </picture>
                 </a>
                 <%}) %>
@@ -175,27 +181,25 @@
       <!-- Q&A -->
       <!-- *********************************** -->
       <section id="qa" class="c-qa l-container l-container--860px p-scroll">
-        <div class="c-qa__content">
-          <h2 class="c-qa__heading u-greentext">Q&A</h2>
+        <h2 class="c-qa__heading u-greentext">Q&A</h2>
+        <% qas.forEach(qa=> { %>
+          <dl class="c-qa__questionanswer">
+            <dt class="c-qa__question">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/qa/qa_icon_mobile.png">
+                <img class="c-qa__icon u-scalequater" src="./assets/img/qa/qa_icon.png" alt="question">
+              </picture>
 
+              <p class="c-qa__questioncontent u-greentext">
+                <%= qa.question %>
+              </p>
+            </dt>
 
-          <% qas.forEach(qa=> { %>
-            <dl class="c-qa__questionanswer">
-              <dt class="c-qa__question">
-                <img class="c-qa__icon" src="./assets/img/qa/qa_icon.png" alt="question" />
-
-                <p class="c-qa__questioncontent u-greentext">
-                  <%= qa.question %>
-                </p>
-              </dt>
-
-              <dd class="c-qa__answer u-black333text">
-                <%= qa.answer %>
-              </dd>
-            </dl>
-            <% }) %>
-
-        </div>
+            <dd class="c-qa__answer u-black333text">
+              <%= qa.answer %>
+            </dd>
+          </dl>
+          <% }) %>
       </section>
 
       <!-- COLUMN -->
@@ -204,22 +208,22 @@
         <div class="l-container--1030px">
           <h2 class="c-column__heading">
             <picture>
-              <source media="(max-width: 767px)" srcset="./assets/img/column/column_headingcover_mobile.jpg" />
+              <source media="(max-width: 767px)" srcset="./assets/img/column/column_headingcover_mobile.jpg">
               <img class="c-column__headingimg u-scalehalf" src="./assets/img/column/column_headingcover.jpg"
-                alt="日々の暮らしにお役立ち「ハッカ油コラム」へ" />
+                alt="日々の暮らしにお役立ち「ハッカ油コラム」へ">
             </picture>
           </h2>
 
           <div class="c-column__list l-container--860px">
             <% columns.forEach(column=> { %>
-              <div onclick="window.location.href='#'" class="c-column__articleblock">
+              <div class="c-column__articleblock">
                 <div class="c-column__article">
-                  <div class="c-column__header">
+                  <a href="#" class="c-column__header">
                     <picture>
                       <source media="(max-width: 767px)"
-                        srcset="./assets/img/column/column_<%= column.id %>_mobile.png" />
+                        srcset="./assets/img/column/column_<%= column.id %>_mobile.png">
                       <img class="c-column__headerimg" src="./assets/img/column/column_<%= column.id %>.jpg"
-                        alt="<%= column.title %>" />
+                        alt="<%= column.title %>">
                     </picture>
 
                     <div class="c-column__headerheading">
@@ -231,7 +235,7 @@
                         <%= column.title %>
                       </h3>
                     </div>
-                  </div>
+                  </a>
 
                   <div class="c-column__description is-sphidden">
                     <p class="u-black333text is-sphidden">
@@ -244,14 +248,14 @@
                   </div>
                 </div>
 
-                <div class="is-pconly">
-                  <img class="c-column__arrow" src="./assets/img/column/column_arrow.png" alt="go-to arrow" />
-                </div>
+                <a href="#" class="is-pconly">
+                  <img class="c-column__arrow" src="./assets/img/column/column_arrow.png" alt="go-to arrow">
+                </a>
               </div>
 
               <div class="c-column__sparrowblock c-info__overlay--flex is-sponly">
                 <img class="c-column__sparrow is-sponly u-scalehalf" src="./assets/img/column/column_arrow_mobile.png"
-                  alt="go-to arrow" />
+                  alt="go-to arrow">
               </div>
               <% }) %>
           </div>
@@ -263,15 +267,15 @@
     <!-- Leaf -->
     <div class="c-banner__leaves">
       <picture>
-        <source media="(max-width: 1024px)" srcset="./assets/img/animation/leaf_top_mobile.png" />
+        <source media="(max-width: 1024px)" srcset="./assets/img/animation/leaf_top_mobile.png">
         <img class="c-banner__leaftop u-fixed is-notindented--top u-scalehalf" src="./assets/img/animation/leaf_top.png"
-          alt="leaf top" />
+          alt="leaf top">
       </picture>
 
       <picture>
-        <source media="(max-width: 1024px)" srcset="./assets/img/animation/leaf_right_mobile.png" />
+        <source media="(max-width: 1024px)" srcset="./assets/img/animation/leaf_right_mobile.png">
         <img class="c-banner__leafright u-fixed is-notindented--right u-scalehalf"
-          src="./assets/img/animation/leaf_right.png" alt="leaf right" />
+          src="./assets/img/animation/leaf_right.png" alt="leaf right">
       </picture>
     </div>
 
@@ -280,7 +284,7 @@
       <% for (let i=1; i<=6; i++) { %>
         <img
           class="c-banner__drop c-banner__drop<%= i %> u-absolute u-originalscaled<% if (i % 2 == 0) { %> u-downup <% } else { %> u-updown <% } %>"
-          src="<%= animation.drops[i-1].src %>" alt="<%= animation.drops[i-1].alt %>" />
+          src="<%= animation.drops[i-1].src %>" alt="<%= animation.drops[i-1].alt %>">
         <% } %>
     </div>
   </main>

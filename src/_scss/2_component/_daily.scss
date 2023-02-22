@@ -5,10 +5,10 @@
     @include tab {
         padding-top: 65px;
         padding-bottom: 65px;
-
-        @include sp {
-            padding-top: 36px;
-        }
+    }
+    
+    @include sp {
+        padding-top: 36px;
     }
 
     .c-daily__intro {

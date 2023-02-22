@@ -17,9 +17,7 @@
         }
 
         @include sp {
-            padding-top: 24px;
-            padding-left: 15px;
-            padding-right: 15px;
+            padding: 24px 15px 4px;
         }
     }
 
@@ -53,12 +51,13 @@
         @include tab {
             margin-top: 25px;
             display: block;
-
         }
 
         @include sp {
             margin-top: 61px;
             padding-bottom: 45px;
+
+            
         }
     }
 
@@ -74,9 +73,11 @@
 
         @include sp {
             font-size: 1.3rem;
-            margin-top: -6px;
+            margin-top: -7px;
             letter-spacing: 0;
             margin-bottom: 24px;
+
+            
         }
     }
 
@@ -88,6 +89,10 @@
         @include sp {
             font-size: 1.3rem;
             color: #000;
+
+            &:nth-child(1) {
+                margin-bottom: -1px;
+            }
         }
     }
 
@@ -102,6 +107,14 @@
 
         @include tab {
             text-align: center;
+        }
+    }
+
+    .c-footer__call {
+        pointer-events: none;
+
+        @include sp {
+            pointer-events: unset;
         }
     }
 }
@@ -128,6 +141,7 @@
 
     @include sp {
         margin-bottom: 20px;
+        transform: translate(-1px, 1px);
     }
 }
 
@@ -142,11 +156,12 @@
     @include tab {
         position: static;
         text-align: unset;
-
     }
 
     @include sp {
-        letter-spacing: -0.1px;
+        font-size: 1rem;
+        letter-spacing: 1px;
         margin-left: -2px;
+        transform: translate(1px, 2px);
     }
 }

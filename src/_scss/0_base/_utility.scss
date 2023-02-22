@@ -59,6 +59,12 @@
     }
 }
 
+.u-scalequater {
+    @include sp {
+        zoom: 25%;
+    }
+}
+
 .u-backgroundgreen {
     background-color: #1f4242 !important;
 }
@@ -210,7 +216,7 @@
 
 .is-notvisible,
 .is-tabandspnotvisible {
-    transition: height 0.5s ease, width 0.5s ease;
+    transition: height 0.2s ease, width 0.2s ease;
 
     @include tab {
         height: 0;

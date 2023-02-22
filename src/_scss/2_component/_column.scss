@@ -16,6 +16,11 @@
 
         @include sp {
             margin-top: 42px;
+
+            .c-column__sparrowblock:nth-child(4) {
+                transform: translateY(-9px); 
+            };
+          
         }
     }
 
@@ -37,7 +42,8 @@
 
             &:first-child {
                 .c-column__headerheadingh3 {
-                    line-height: 1.7;
+                    line-height: 1.69;
+                    transform: translateY(0);
                 }
 
                 .c-column__headerheadingp {
@@ -47,12 +53,20 @@
                 .c-column__sparrowblock {
                     transform: translateY(1px);
                 }
+
+                .c-column__headerimg {
+                    transform: translate(0, -5px);
+                }
+
+                .c-column__description {
+                    transform: translateY(1px);
+                }
             }
 
             &:not(:first-child) {
                 .c-column__headerheadingh3 {
                     line-height: 1.7;
-                    margin-top: 6px;
+                    margin-top: 7px;
                 }
 
                 .c-column__sparrowblock {
@@ -63,6 +77,22 @@
             &:nth-child(3) {
                 transform: translateY(-2px);
                 margin-top: 1px;
+
+                .c-column__headerheadingh3 {
+                    transform: translateY(-3px);
+                }
+
+                .c-column__headerimg {
+                    transform: translateY(-7px);
+                }
+            }
+
+            &:nth-child(5) {
+                transform: translate(0, -2px);
+
+                .c-column__headerheadingh3 {
+                    transform: translateY(-2px);
+                }
             }
 
             &:nth-child(10) {
@@ -95,6 +125,7 @@
     .c-column__seemore {
         font-size: 1.3rem;
         color: #176b6a;
+        font-family: $secondary-fonts;
         text-decoration-line: underline;
         text-decoration-style: solid;
         text-decoration-color: #176b6a;
@@ -240,6 +271,10 @@
             display: flex !important;
             align-items: center;
             transform: translateY(-8px);
+
+            &:nth-child(2) {
+                transform: translateY(-9px);
+            }
         }
     }
 

@@ -44,9 +44,10 @@ $(".c-info__more").click(function () {
   $(this)
     .parent()
     .parent()
+    .parent()
     .find(".c-info__overlay")
     .removeClass("c-info__overlay--flex");
-  $(this).next().addClass("c-info__overlay--flex");
+  $(this).parent().next().addClass("c-info__overlay--flex");
 });
 
 // MOBILE MENU

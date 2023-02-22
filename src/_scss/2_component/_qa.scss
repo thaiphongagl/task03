@@ -5,6 +5,20 @@
     @include sp {
         padding-top: 40px;
         padding-bottom: 0;
+        margin-bottom: -4px;
+
+        .c-qa__questionanswer {
+            &:nth-child(3) {
+                margin-top: 10px;
+
+            }
+        }
+
+        // .c-qa__question {
+        //     &:nth-child(3) {
+        //         transform: translate(0, 8px);
+        //     }
+        // }
     }
 
     .c-qa__heading {
@@ -26,14 +40,13 @@
         margin-top: 46px;
 
         @include sp {
-            margin-top: 25px;
+            margin-top: 24px;
 
-            &:not(:first-child) {
-                margin-top: 5px;
-
-                .c-qa__answer {
-                    margin-top: 11px;
+            &:nth-child(3) {
+                .c-qa__question {
+                    transform: translateY(-8px);
                 }
+                // margin-top: 20px;
             }
         }
     }
@@ -48,7 +61,6 @@
 
     .c-qa__icon {
         @include sp {
-            zoom: 67%;
             margin-top: -4px;
             margin-left: 0;
         }
@@ -69,7 +81,7 @@
         margin-top: 6px;
         letter-spacing: 1.4px;
         transform: translate(0, -3px);
-        
+
         @include sp {
             font-size: 1.3rem;
             margin-top: 6px;
