@@ -1,13 +1,11 @@
 let website = document.querySelector("html");
 let body = document.querySelector("body");
-
 let drops = document.querySelector(".c-banner__drops");
 let leafTop = document.querySelector(".c-banner__leaftop");
 let leafRight = document.querySelector(".c-banner__leafright");
 let leafTopMobile = document.querySelector(".c-header__leaftopmenu");
 let leafRightMobile = document.querySelector(".c-header__leafrightmenu");
 
-// scroll ẩn hiện bubble và leaf
 document.addEventListener("scroll", (e) => {
   if (website.scrollTop <= 1) {
     drops.classList.remove("is-hidden");
@@ -20,7 +18,7 @@ document.addEventListener("scroll", (e) => {
     leafTop.classList.add("is-indented--top");
     leafRight.classList.add("is-indented--right");
   }
-  // cuộn đến phần nào thì sáng nav bar phần đó
+
   check_el_pos();
 });
 
@@ -38,8 +36,6 @@ function check_el_pos() {
   });
 }
 
-// click vào more trong point để ẩn hiện overlay trong 1 point nhung khong tat overlay cua point khac
-
 $(".c-info__more").click(function () {
   $(this)
     .parent()
@@ -50,7 +46,6 @@ $(".c-info__more").click(function () {
   $(this).parent().next().addClass("c-info__overlay--flex");
 });
 
-// MOBILE MENU
 let menuBtnSp = document.querySelector(".c-banner__iconmenu");
 let menuBar = document.querySelector(".c-header");
 let bodyElement = document.querySelector("body");
@@ -78,14 +73,13 @@ function mobileMenuHandler() {
     leafTopMobile.classList.add("is-displayedmenumobile");
   }
 }
-// click vào menu button để ẩn hiện menu bar
+
 menuBtnSp.addEventListener("click", function () {
   menuBar.classList.toggle("is-tabandspnotvisible");
-  // body.classList.toggle("u-fixed");
   body.style.top = "0px"
   mobileMenuHandler();
 });
-// click vào nav button menu để ẩn menu bar
+
 navLinks.forEach(function (navLink) {
   navLink.addEventListener("click", function () {
     menuBar.classList.toggle("is-tabandspnotvisible");
@@ -93,7 +87,6 @@ navLinks.forEach(function (navLink) {
   });
 });
 
-//click arrow down to display / hide column description
 $(".c-column__sparrowblock").click(function () {
   $(this)
     .prev()
@@ -102,9 +95,9 @@ $(".c-column__sparrowblock").click(function () {
     .toggleClass("is-sphidden");
 });
 
-//arrow rotate
 $(".c-column__sparrow")
   .parent()
   .click(function () {
     $(this).children().toggleClass("is-rotated");
   });
+

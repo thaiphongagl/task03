@@ -55,7 +55,7 @@
                   <img class="c-daily__useimg u-scalequater" src="<%= dailyItem.url %>" alt="<%= dailyItem.title %>">
                 </picture>
 
-                <span class="c-daily__label c-daily__label<%= dailyItem.id %> u-black333text is-aligned">
+                <span class="c-daily__label c-daily__label<%= dailyItem.id %> u-text333 is-aligned">
                   <%= dailyItem.title %>
                 </span>
 
@@ -77,7 +77,7 @@
       <!-- *********************************** -->
       <section id="info" class="c-info">
         <div class="c-info__content l-container p-scroll">
-          <div class="c-info__points l-container--1030px">
+          <div class="c-info__points l-container--1030">
             <% if (typeof info !='undefined' ) { %>
               <% info.points.pointNumbers.forEach(pointNumber=> { %>
                 <div class="c-info__pointblock">
@@ -92,7 +92,7 @@
                       <label class="c-info__label">POINT</label>
                     </div>
 
-                    <div class="c-info__headingcontent u-width--420px">
+                    <div class="c-info__headingcontent u-w420">
                       <h2 class="c-info__bigheading u-greentext">
                         <%= pointNumber.title %>
                       </h2>
@@ -170,7 +170,7 @@
                 <%}) %>
             </div>
 
-            <p class="c-info__brandnote u-black333text">
+            <p class="c-info__brandnote u-text333">
               Amazon、Amazon.co.jp、及びAmazon.co.&shy;jpロゴはAmazon.com,
               Inc.又はその関連会社の商標です。
             </p>
@@ -180,7 +180,7 @@
 
       <!-- Q&A -->
       <!-- *********************************** -->
-      <section id="qa" class="c-qa l-container l-container--860px p-scroll">
+      <section id="qa" class="c-qa l-container l-container--860 p-scroll">
         <h2 class="c-qa__heading u-greentext">Q&A</h2>
         <% qas.forEach(qa=> { %>
           <dl class="c-qa__questionanswer">
@@ -195,7 +195,7 @@
               </p>
             </dt>
 
-            <dd class="c-qa__answer u-black333text">
+            <dd class="c-qa__answer u-text333">
               <%= qa.answer %>
             </dd>
           </dl>
@@ -205,7 +205,7 @@
       <!-- COLUMN -->
       <!-- *********************************** -->
       <section id="column" class="c-column p-scroll">
-        <div class="l-container--1030px">
+        <div class="l-container--1030">
           <h2 class="c-column__heading">
             <picture>
               <source media="(max-width: 767px)" srcset="./assets/img/column/column_headingcover_mobile.jpg">
@@ -214,7 +214,7 @@
             </picture>
           </h2>
 
-          <div class="c-column__list l-container--860px">
+          <div class="c-column__list l-container--860">
             <% columns.forEach(column=> { %>
               <div class="c-column__articleblock">
                 <div class="c-column__article">
@@ -227,18 +227,18 @@
                     </picture>
 
                     <div class="c-column__headerheading">
-                      <p class="c-column__headerheadingp u-black333text u-spacing--1p4px">
+                      <p class="c-column__headerheadingp u-text333 u-spacing">
                         <%= column.titleNote %>
                       </p>
 
-                      <h3 class="c-column__headerheadingh3 c-column__title u-black333text">
+                      <h3 class="c-column__headerheadingh3 c-column__title u-text333">
                         <%= column.title %>
                       </h3>
                     </div>
                   </a>
 
                   <div class="c-column__description is-sphidden">
-                    <p class="u-black333text is-sphidden">
+                    <p class="u-text333 is-sphidden">
                       <%= column.description %>
                     </p>
 
@@ -249,7 +249,7 @@
                 </div>
 
                 <a href="#" class="is-pconly">
-                  <img class="c-column__arrow" src="./assets/img/column/column_arrow.png" alt="go-to arrow">
+                  <img class="is-pconly c-column__arrow" src="./assets/img/column/column_arrow.png" alt="go-to arrow">
                 </a>
               </div>
 

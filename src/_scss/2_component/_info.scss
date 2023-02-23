@@ -273,7 +273,7 @@
         visibility: hidden;
         opacity: 0;
         max-height: 290px;
-        overflow-x: hidden;
+        overflow-y: auto;
 
         @include tab {
             max-height: unset;
@@ -303,7 +303,6 @@
         font-size: 2.4rem;
         font-weight: 400;
         letter-spacing: 2.3px;
-        // position: relative;
 
         @include tab {
             font-size: 2rem;
@@ -320,17 +319,6 @@
                 margin-top: 0;
             }
         }
-
-        // &::after {
-        //     content: "";
-        //     width: 100%;
-        //     height: 40px;
-        //     background: #fff;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     transform: translateX(-50%);
-        // }
     }
 
     .c-info__overlaylinebreak {
@@ -355,10 +343,6 @@
         letter-spacing: 1.2px;
         line-height: 1.8;
         padding: 0 20px;
-        max-height: 330px;
-        height: 100%;
-        overflow-y: scroll;
-
 
         @include tab {
             font-size: 1.3rem;
